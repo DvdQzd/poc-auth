@@ -1,7 +1,8 @@
-import { User } from "src/domain/user.domain";
+import { UserResponse } from "src/domain/user.domain";
+
 
 export class UserService {
-    async getUser(email: string, password: string): Promise<User> {
+    async getUser(email: string, password: string): Promise<UserResponse> {
         const users = [
             {
                 name: 'Cosme Fulanito',

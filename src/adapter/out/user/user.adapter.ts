@@ -1,7 +1,9 @@
 import { Injectable } from "@nestjs/common";
-import { User } from "src/domain/user.domain";
-import { UserService } from "src/mock_service/user.service";
+// import { UserResponse } from "src/domain/user.domain";
+// import { UserService } from "src/mock_service/user.service";
 import { UserOutPort } from "./user-out.port";
+import { User } from "./user.entity";
+import { UserService } from "./user.service";
 
 @Injectable()
 export class UserAdapter implements UserOutPort{
